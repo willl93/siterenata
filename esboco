@@ -1,0 +1,103 @@
+  <!--   <div class="logo">
+            <a href="index.html">
+                <img src="assets/image/logo menu sem fundo.png" alt="logo site">
+            </a>
+        </div>
+            <div class="dp-menu">
+                <nav>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Dra Renata</a></li>
+                        <li><a href="">Procedimentos</a>
+                            <ul>
+                                <li><a href="div harmonizacao.html">Harmonizacao</a></li>
+                                <li><a href="div facial.html">Tratamento facial</a></li>
+                                <li><a href="div corporal.html">Tratamento corporal</a></li>
+                                <li><a href="div capilar.html">Tratamento capilar</a></li>
+                            </ul>
+                        </li>
+                        <li id="promocoes"><a href="">Promoçôes</a></li>
+                        <li id="contato"><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+        
+        
+        header .logo {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 30px;
+    
+}
+
+header .logo img {
+    height: 120px;
+    width: 180px; 
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* animacao com scrool*/
+
+.init:nth-child(2){
+    opacity:0;
+    filter: blur(15px);
+    transition:all 2s;
+    transform: translateX(-100%);
+}
+
+.init-off:nth-child(2){
+    opacity:1;
+    filter: blur(0);
+    transition:all 2s;
+    transform: translateX(0);
+}
+.init:nth-child(3){
+    opacity:0;
+    filter: blur(15px);
+    transition:all 2s;
+    transform: translateX(100%);
+}
+
+.init-off:nth-child(3){
+    opacity:1;
+    filter: blur(0);
+    transition:all 2s;
+    transform: translateX(0);
+}
+.init:nth-child(4){
+    opacity:0;
+    filter: blur(15px);
+    transition:all 2s;
+    transform: translateX(-100%);
+}
+
+.init-off:nth-child(4){
+    opacity:1;
+    filter: blur(0);
+    transition:all 2s;
+    transform: translateX(0);
+}
+
+ .init{
+    opacity:0;
+    filter: blur(15px);
+    transition:all 2s;
+    transform: translateX(100%);
+}
+
+.init-off{
+    opacity:1;
+    filter: blur(0);
+    transition:all 2s;
+    transform: translateX(0);
+}
+
+        -->
+  

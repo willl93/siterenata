@@ -1,0 +1,61 @@
+.main  img {
+    width: 800px;
+    height: 500px;
+    object-fit:cover;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    
+
+}
+
+.main .perfil-re  {
+    justify-content:space-between;
+    display: flex;
+    align-items:center;
+    background-image: url('../image/fundo\ tela\ 2.jpg');
+    background-position:center;
+    background-size: cover;
+}
+
+.main .perfil-re .info-re {
+    position: relative;
+    right: 300px;
+    padding-bottom: 0px;
+    line-height: 50px;
+    
+}
+
+.main .perfil-re .info-re h1 {
+    font-family:'Times New Roman', Times, serif 
+}
+
+.main .perfil-re .info-re p {
+    font-family:'Times New Roman', Times, serif
+}
+
+ .main .botao   {
+    color: #fff;
+   text-decoration: none;
+   margin-top: 20px;
+   background-color: #ea826b;
+   height: 40px;
+   width: 180px;
+   border-radius: 20px;
+   text-transform: uppercase;
+   cursor: pointer;
+    border: none;
+}
+
+.main .botao i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #25d366;
+   
+}
+
+.main .botao:hover {
+    background-color:#e7b1a5;
+    color: #fff;
+}

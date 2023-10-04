@@ -1,36 +1,17 @@
-let totalSliders = document.querySelectorAll('.slider-img').length;
-let currentSlide = 0;
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) =>{
+        if(entry.isIntersecting) {
+            entry.target.classList.add('init-off')
+        } else {
+            entry.target.classList.remove('init-off')
+        }
+    })
+})
 
-let sliderWidth = document.querySelector('.slider').clientWidth;
+const elements = document.querySelectorAll('.init')
 
-document.querySelector('.slider-largura').style.width =
-    `${sliderWidth * totalSliders}px`;
+elements.forEach((element) => myObserver.observe(element))
 
-document.querySelector('.slider--controls').style.width =
-    `${sliderWidth}px`;
-document.querySelector('.slider--controls').style.height =
-    `${document.querySelector('.slider').clientHeight}px`;
 
-function goPrev() {
-    currentSlide--;
-    if(currentSlide < 0) {
-        currentSlide = totalSliders -1;
-    }
-    updateMargin();
-}
 
-function goNext(){
-    currentSlide++;
-    if(currentSlide > (totalSliders - 1)) {
-        currentSlide = 0;
-    }
-    updateMargin()
-}
 
-function updateMargin() {
-    let sliderItemWidth = document.querySelector('.slider-img').clientWidth;
-    let newMargin = (currentSlide * sliderItemWidth);
-    document.querySelector('.slider-largura').style.marginLeft = `-${newMargin}px`;
-}
-
-setInterval(goNext, 4000);

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
     <title>Dra Renata Oliveira</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1V3VNNSFF"></script>
 <script>
@@ -15,55 +15,153 @@
     <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&family=Great+Vibes&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Ysabeau+Infant:ital,wght@1,100;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/1fdff17003.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <a href="index.html">
-                 <img src="assets/image/logo branco.jpeg" alt="logo do site">
-                </a>
-            </div>
-            <div class="menu">
-                <nav>
+
+        <a href="index.html" class="logo">
+            <img src="assets/image/logo sem fundo redondo.png" alt="logo site">
+        </a>
+
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i id="menu-opener" class="fa-solid fa-bars"></i></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="sobre.html">Sobre Dra Renata</a></li>
+                <li><a href="">Procedimentos <i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #f8f9fc;"></i></a>
                     <ul>
-                        <li><a href="sobre.html">sobre</a></li>
-                        <li><a href="procedimentos.html">procedimentos</a></li>
-                        <li><a href="contato.html">contato</a></li>
+                        <li><a href="#">Tratamentos </a>
+                            <ul>
+                                <li><a href="div harmonizacao.html">Harmonizacao</a></li>
+                                <li><a href="div facial.html">Facial</a></li>
+                                <li><a href="div corporal.html"> Corporal</a></li>
+                                <li><a href="div capilar.html"> Capilar</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
+                </li>
+                <li><a href="#">Promoções <i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #f8f9fc;"></i></a>
+                        <ul>
+                            <li><a href="#">Facial em Breve</a></li>
+                            <li><a href="#">Corporal em Breve</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="main"></div>
-        <div class="slider">
-            <div class="slider--controls">
-                <div class="slider--control" onclick="goPrev()"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></div>
-                <div class="slider--control" onclick="goNext()"><i class="fa-solid fa-arrow-right"></i></div>
+    <main class="main">
+        <div class="perfil-re">
+            <div class="re-image">
+                <img src="assets/image/renta perfil sem fundo.png" alt="foto perfil">
             </div>
-            <div class="slider-largura">
-                <div class="slider-img" style="background-image: url('assets/image/botox.jpg');">
-                    botox
-                </div>
-                <div class="slider-img" style="background-image: url('assets/image/Preenchimento-Labial.jpg');">
-                    preenchimento
-                </div>
-                <div class="slider-img" style="background-image: url(assets/image/microagulhamento.jpg);">
-                    microagulhamento
-                </div>
+            <div class="info-re">
+                <img src="assets/image/logo menu sem fundo.png" alt="logo site">
             </div>
         </div>
     </main>
-    <section>
-        aaaaaa
+    <section class="procedimentos-home">
+        <div class="pcd-h1">
+            <h1>PROCEDIMENTOS ESTÉTICOS</h1>
+        </div>
+        <div class="procedimentos-container-1 init">
+            <img src="assets/image/botox-sem fundo.png" alt="botox">
+            <ul>
+                <li><strong>PREENCHIMENTO COM ÁCIDO HIALURONÍCO</strong></li>
+                <li><i class="fa-solid fa-circle-info"></i>Aplicação de Toxina Botulínica em músculos específicos, causando o relaxamento/paralisação dessas estruturas. Promove a suavização de rugas e linhas de expressão, muito utilizada para testa, "pés de galinha" e glabela.</li>
+                <a class="button" href="">Saiba Mais</a>
+            </ul>
+        </div>
+        <div class="procedimentos-container-2 init">
+            <img src="assets/image/preenchimento labial.jpg" alt="preenchimento labial">
+            <ul>
+                <li><strong>PREENCHIMENTO LABIAL</strong></li>
+                <li><i class="fa-solid fa-circle-info"></i>Aplicação do  Ácido Hialuroníco para preenchimento labial, é uma técnica que consiste na aplicação de substâncias que preenchem os lábios, proporcionando mais volume à região. Esse procedimento também pode ser realizado para hidratar, dar projeção e tornar os contornos da boca mais delineados.</li>
+                <a class="button" href="">Saiba Mais</a>
+            </ul>
+        </div>
+        <div class="procedimentos-container-3 init">
+            <img src="assets/image/botox testa.jpg" alt="botox">
+            <ul>
+                <li><strong>TOXINA BOTULINÍCA - BOTOX</strong></li>
+                <li><i class="fa-solid fa-circle-info"></i>Aplicação de Toxina Botulínica em músculos específicos, causando o relaxamento/paralisação dessas estruturas. Promove a suavização de rugas e linhas de expressão, muito utilizada para testa, "pés de galinha" e glabela.</li>
+                <a class="button" href="">Saiba Mais</a>
+            </ul>
+        </div>
+    </section>
+    <div class="div-outros-pcd">
+        <div class="outros-pcd ">OUTROS TRATAMENTOS</div>
+    </div>
+    <section class="procedimentos-outros">
+        <div class="pcd-area ">
+                <div class="details-section">
+                    <strong class="strong-details">PARA PELE</strong>
+                        <ul>
+                        <li><strong>MICROAGULHAMENTO</strong></li>
+                        <li><strong>PEELING Facial</strong></li>
+                        <li><strong>SKINBOOSTER</strong></li>
+                        <li><strong>LIMPEZA DE PELE</strong></li>
+                        <li><strong>CICATRIZ DE ACNE</strong></li>
+                        <li><strong>PELE DE PÊSSEGO</strong></li>
+                        <li><strong>LIPO ENZIMÁTICA DE PAPADA</strong></li>
+                        <a class="button" href="">Saiba Mais</a>
+                        </ul>
+                    </div>
+                <div class="details-section">
+                    <strong  class="strong-details">CORPORAL</strong>
+                        <ul>
+                        <li><strong>RADIOFREQUÊNCIA</strong></li>
+                        <li><strong>LIPO  ENZIMÁTICA</strong></li>
+                        <li><strong>DRENAGEM LINFÁTICA</strong></li>
+                        <li><strong>MASSAGEM MODELADORA</strong></li>
+                        <li><strong>BUMBUM NA NUCA</strong></li>
+                        <li><strong>SECAGEM DE VASINHOS</strong></li>
+                        <li><strong>CARBOXTERAPIA</strong></li>
+                        <a class="button" href="">Saiba Mais</a>
+                        </ul>
+                  </div>
+                  <div class="details-section">
+                    <strong  class="strong-details">CAPILAR</strong>
+                        <ul>
+                        <li><strong>Avaliação tricológica</strong></li>
+                        <li><strong>LED terapia</strong></li>
+                        <li><strong>MMP no couro capilar</strong></li>
+                        <a class="button" href="">Saiba Mais</a>
+                        </ul>
+                  </div>
+            </div>
     </section>
     <footer>
-
+        <div class="contatos">
+            <div class="redes-sociais">
+                <a href="https://instagram.com/drarenataoliveir?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="color: #f46c9c;"></i></a>
+                <a href="https://wa.me/message/JWD6IB44NZHTE1" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #26ba89;"></i></a>
+                <a href="https://instagram.com/willl93?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-regular fa-envelope" style="color: #3d1fd1;"></i></a>
+            </div>
+            <div class="endereco">
+                <strong><i class="fa-solid fa-location-dot" style="color: #fcfcfc;"></i>ENDEREÇO - 1</strong>
+                <p>DRA RENATA OLIVEIRA</p>
+                <p>Zona Leste - Avenida Dr.Pereira Vergueiro , 364 - Artur Alvim, Sâo Paulo - SP,03563-000</p>
+                <p>CONTATO: (11) 98495-5939</p>
+            </div>
+            <div class="desenvolvido">
+                <p>Copyright 2023 © DRA RENATA OLIVEIRA - Todos os direitos reservados</p>
+            </div>
+            <div class="developer">
+                <p>criado por <a href="https://instagram.com/willl93?igshid=OGQ5ZDc2ODk2ZA=="><STRong>WILLIAM OLIVEIRA</STRong></a></p>
+            </div>
+        </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <a class="wpp-icone" href="https://wa.me/message/JWD6IB44NZHTE1" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
+<script src="assets/js/script.js"></script>
 </html>
